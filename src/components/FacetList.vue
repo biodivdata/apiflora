@@ -31,7 +31,7 @@ export default {
 
   computed:{
   	countSortedList(){
-  		return this.listData.sort((a,b) => b.detections.length - a.detections.length)
+  		 return [...this.listData].sort((a,b) => b.detections.length - a.detections.length)
   	}
   },
 
